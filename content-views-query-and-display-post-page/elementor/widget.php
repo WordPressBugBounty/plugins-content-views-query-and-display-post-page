@@ -2502,6 +2502,7 @@ if ( !class_exists( 'ContentViews_Elementor_Widget' ) ) {
 				[
 					'label'	 => "",
 					'type'	 => \Elementor\Controls_Manager::TEXT,
+					'label_block' => true,
 					'description'	 => __( 'Separate tags by comma', "content-views-query-and-display-post-page" ),
 					'_cv_show_when'	 => self::$hasPro,
 					'condition' => [

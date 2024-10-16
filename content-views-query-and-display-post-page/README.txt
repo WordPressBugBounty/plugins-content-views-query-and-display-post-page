@@ -2,9 +2,9 @@
 Contributors: pt-guy
 Tags: post grid, blocks, elementor, gutenberg, recent posts, gutenberg blocks, grid, display posts, post list, post slider, post accordion, category post, news, magazine, portfolio, latest posts, related posts
 Requires at least: 3.3
-Tested up to: 6.6
+Tested up to: 6.6.2
 Requires PHP: 5.6
-Stable tag: 4.0
+Stable tag: 4.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -261,6 +261,12 @@ If you encounter any difficulties or if you have questions about Content Views, 
 
 
 == Changelog ==
+
+= 4.0.1 =
+* Fix: [Shortcode] Remove unwanted CSS of another plugin (that causes issue to preview output) from the Add/Edit View page
+* Fix: [ElementorWidget] "Manual excerpt" and "HTML in excerpt" options not updated in output
+* Fix: [ElementorWidget] Undefined array key "columns" in some edge cases
+
 
 = 4.0 =
 * New: [ElementorWidget] Add 16 grid, list and other post layout widgets for the Elementor page builder.

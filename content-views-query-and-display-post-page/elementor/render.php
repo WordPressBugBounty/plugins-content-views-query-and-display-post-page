@@ -108,7 +108,7 @@ if ( !class_exists( 'ContentViews_Elementor_Render' ) ) {
 
 			$settings[ PT_CV_PREFIX . 'author__in' ]							 = self::values_from_widget( $data, 'author', '' );
 			$settings[ PT_CV_PREFIX . 'author__not_in' ]						 = self::values_from_widget( $data, 'authorNot', '' );
-			$columns															 = (int) $data[ 'columns' ];
+			$columns															 = isset( $data[ 'columns' ] ) ? (int) $data[ 'columns' ] : 1;
 			$settings[ PT_CV_PREFIX . $data[ 'viewType' ] . '-number-columns' ]	 = $columns;
 //			$settings[ PT_CV_PREFIX . 'resp-tablet-number-columns' ]			 = isset( $columns[ 'sm' ] ) ? $columns[ 'sm' ] : $columns[ 'md' ];
 //			$settings[ PT_CV_PREFIX . 'resp-number-columns' ]					 = $columns[ 'xs' ];
@@ -225,6 +225,10 @@ if ( !class_exists( 'ContentViews_Elementor_Render' ) ) {
 					'__key' => 'ads-content' . $i,
 				];
 			}
+
+			// Unset keys not existed in widget
+			unset( $general_controls[ 'excerptManualPro' ] );
+			unset( $general_controls[ 'excerptHtmlPro' ] );
 
 			return array_merge( $general_controls, $custom_others, $custom_ob1 );
 		}
