@@ -2,9 +2,9 @@
 Contributors: pt-guy
 Tags: post grid, blocks, elementor, gutenberg, recent posts, gutenberg blocks, grid, display posts, post list, post slider, post accordion, category post, news, magazine, portfolio, latest posts, related posts
 Requires at least: 3.3
-Tested up to: 6.6.2
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 4.0.1
+Stable tag: 4.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -261,6 +261,9 @@ If you encounter any difficulties or if you have questions about Content Views, 
 
 
 == Changelog ==
+
+= 4.0.2 =
+* Fix: warning about loading translations too early in WordPress 6.7
 
 = 4.0.1 =
 * Fix: [Shortcode] Remove unwanted CSS of another plugin (that causes issue to preview output) from the Add/Edit View page

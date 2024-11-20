@@ -365,10 +365,10 @@ class ContentViews_Block_Common {
 
 	static function meta_list() {
 		return array(
-			[ 'value' => 'date', 'label' => __( 'Date', 'content-views-query-and-display-post-page' ) ],
-			[ 'value' => 'author', 'label' => __( 'Author', 'content-views-query-and-display-post-page' ) ],
-			[ 'value' => 'taxonomy', 'label' => __( 'Taxonomies', 'content-views-query-and-display-post-page' ) ],
-			[ 'value' => 'comment', 'label' => __( 'Comment', 'content-views-query-and-display-post-page' ) ],
+			[ 'value' => 'date', 'label' => 'Date' ],
+			[ 'value' => 'author', 'label' => 'Author' ],
+			[ 'value' => 'taxonomy', 'label' => 'Taxonomies' ],
+			[ 'value' => 'comment', 'label' => 'Comment' ],
 		);
 	}
 
